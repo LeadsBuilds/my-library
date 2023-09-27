@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 export interface CstButtonProps {
     text?: string;
-    type?: 'primary' | 'secundary';
+    type?: 'primary' | 'secondary';
     onClick?: () => void;
 }
 
