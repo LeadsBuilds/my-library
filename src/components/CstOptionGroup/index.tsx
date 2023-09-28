@@ -4,9 +4,9 @@ import styled from "styled-components";
 const StyledSection = styled.section<{ selected : boolean }>`
     width: 194px;
     height: 88px;
-    background: ${props => props.selected ? 'linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%)' : '#FFF'};
+    background: ${(props: any) => props.selected ? 'linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%)' : '#FFF'};
     border: 1px solid;
-    border-color: ${props => props.selected ? '#002F52' : '#EB9B00'};
+    border-color: ${(props: any) => props.selected ? '#002F52' : '#EB9B00'};
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -16,17 +16,17 @@ const StyledSection = styled.section<{ selected : boolean }>`
     font-family: sans-serif;
     cursor: pointer;
     header {
-        color: ${props => props.selected ? '#FFF' : '#EB9B00'};
+        color: ${(props: any) => props.selected ? '#FFF' : '#EB9B00'};
         font-size: 12px;
         font-weight: 400;
     }
     strong {
-        color: ${props => props.selected ? '#FFF' : '#EB9B00'};
+        color: ${(props: any) => props.selected ? '#FFF' : '#EB9B00'};
         font-size: 16px;
         font-weight: 700;
     }
     footer {
-        color: ${props => props.selected ? '#FFF' : 'rgba(0,0,0,0.54)'};
+        color: ${(props: any) => props.selected ? '#FFF' : 'rgba(0,0,0,0.54)'};
         font-size: 12px;
         font-weight: 400;
     }
